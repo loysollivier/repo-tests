@@ -6,4 +6,8 @@
   <project name="poky" remote="yocto" revision="65d23bd7986615fdfb0f1717b615534a2a14ab80" upstream="rocko"/>
   <project name="meta-openembedded" remote="openembedded" revision="5d6d21e98ed594809169d2b2f6964e90a3369a96" upstream="rocko"/>
   <project name="meta-raspberrypi" remote="yocto" revision="a1cfeb3324c458a73507e34ffcf28c25591b8052" upstream="rocko"/>
+
+  <!-- This is related to lava-dispatcher -->
+  <!-- For python-backports-lzma -->
+  <project name="meta-virtualization" remote="yocto" revision="2520ee86700f167c7c156267ddec02301119727f" upstream="rocko"/>
 </manifest>
