@@ -16,32 +16,39 @@ cat <<EOF >>conf/bblayers.conf
 #
 # meta-openembedded dependencies for meta-raspberrypi
 #
-BBLAYERS =+ " \\
-  /home/lollivier/yocto/poky/meta-openembedded/meta-oe \\
-  /home/lollivier/yocto/poky/meta-openembedded/meta-multimedia \\
-  /home/lollivier/yocto/poky/meta-openembedded/meta-networking \\
-  /home/lollivier/yocto/poky/meta-openembedded/meta-python \\
+BBLAYERS =+ " \
+  /home/lollivier/lavamini/meta-openembedded/meta-oe \
+  /home/lollivier/lavamini/meta-openembedded/meta-multimedia \
+  /home/lollivier/lavamini/meta-openembedded/meta-networking \
+  /home/lollivier/lavamini/meta-openembedded/meta-python \
   "
 
 #
 # meta-raspberrypi
 #
-BBLAYERS =+ " \\
-  /home/lollivier/yocto/poky/meta-raspberrypi \\
-  "
-
-#
-#
-#
 BBLAYERS =+ " \
-  /home/lollivier/lavamini/meta-virtualization \
+  /home/lollivier/lavamini/meta-raspberrypi \
   "
 
-
 #
-# This needs to be VCSed
+# meta-lava-dispatcher
 #
 BBLAYERS =+ " \
   /home/lollivier/lavamini/meta-lava/meta-lava-dispatcher \
   "
+#
+# python-backports-lzma for lava-dispatcher
+#
+BBLAYERS =+ " \
+  /home/lollivier/lavamini/meta-openembedded/meta-filesystems \
+  /home/lollivier/lavamini/meta-virtualization \
+  "
+
+#
+# python-nose for lava-dispatcher
+#
+BBLAYERS =+ " \
+  /home/lollivier/lavamini/poky/meta \
+  "
+
 EOF
