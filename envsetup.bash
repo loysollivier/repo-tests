@@ -51,4 +51,19 @@ BBLAYERS =+ " \
   /home/lollivier/lavamini/poky/meta \
   "
 
+#
+# libguestfs for lava-dispatcher
+#
+BBLAYERS =+ " \
+  /home/lollivier/lavamini/meta-libguestfs \
+  "
+
+#
+# po4a for libguestfs for lava-dispatcher
+#
+BBLAYERS =+ " \
+  /home/lollivier/lavamini/meta-openembedded/meta-perl \
+  "
+
+
 EOF
